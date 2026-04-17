@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Adarsh aka Wargh - Developer & AI Innovator. Building the future with code, creativity, and innovation.">
+  <title>Wargh — Developer & AI Innovator</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wargh — Developer & AI Innovator">
+  <meta property="og:description" content="Adarsh aka Wargh - Developer & AI Innovator. Building the future with code, creativity, and innovation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wargh.dev">
+  <meta property="og:image" content="https://wargh.dev/imgs/warghlogo.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wargh — Developer & AI Innovator">
+  <meta name="twitter:description" content="Adarsh aka Wargh - Developer & AI Innovator. Building the future with code, creativity, and innovation.">
+  <meta name="twitter:image" content="https://wargh.dev/imgs/warghlogo.png">
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <img src="/imgs/warghlogo.png" alt="Wargh Logo" class="logo" loading="eager">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active-nav">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+      <li><a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>Available for Projects</span>
+      </div>
+      <p class="hero-sub">Developer &amp; AI Innovator</p>
+      <h1 class="hero-title">
+        Hello, I'm <span class="name-gradient">Adarsh</span><br>
+        <span class="typed-wrapper">aka&nbsp;<span id="typed-text"></span><span class="cursor-blink">|</span></span>
+      </h1>
+      <p class="hero-desc">Building intelligent systems, stunning interfaces, and automated workflows — from the ground
+        up.</p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="15">0</span>+
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="2">0</span>+
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="10">0</span>+
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-label reveal">Who I Am</div>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="img-3d-wrap" id="imgTilt">
+            <img src="imgs/003.jpeg" alt="Adarsh Mishra - Wargh" loading="eager">
+            <div class="img-glow"></div>
+          </div>
+          <div class="floating-badge badge-1">
+            <i class="fas fa-code"></i> Developer
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fas fa-brain"></i> AI Engineer
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h2 class="section-title">About <span class="red">Me</span></h2>
+          <p>I am a versatile developer passionate about solving complex problems through technology. My journey began
+            on a low-end PC with the ambitious goal of building a world-class cybersecurity company — a path that has
+            made me resourceful and persistent.</p>
+          <p>A natural leader and extrovert, I thrive in collaborative environments and enjoy tackling challenges in AI,
+            UI design, and automation. I am a dedicated lifelong learner, driven to turn ambitious ideas into reality.
+          </p>
+
+          <div class="skill-bars-section">
+            <div class="skill-bar-item reveal">
+              <div class="skill-bar-header"><span>Python & Automation</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item reveal">
+              <div class="skill-bar-header"><span>JavaScript & Web Dev</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item reveal">
+              <div class="skill-bar-header"><span>AI & Bot Engineering</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item reveal">
+              <div class="skill-bar-header"><span>UI/UX & Figma Design</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Languages &amp; Frameworks</span><br>Python, JavaScript, Tailwind CSS, CSS, HTML5</li>
+              <li><span>Design &amp; Media</span><br>Figma (UI/UX), Adobe Photoshop, Canva, Filmora</li>
+              <li><span>AI &amp; Machine Learning</span><br>AI/ML Concepts, Prompt Engineering, ChatGPT, AI Workflow
+                Design, Bot Architecture</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Web Design &amp; UI Development (1.5 years)</span><br>Crafted responsive interfaces using
+                JavaScript, CSS, and Tailwind. Focused on intuitive, engaging user experiences.</li>
+              <li><span>AI &amp; Bot Development (1 year)</span><br>Engineered intelligent bots for Discord and
+                Telegram. Specialized in AI-powered chatbots, automation, and security solutions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section id="services">
+    <div class="section-container">
+      <div class="section-label reveal">What I Do</div>
+      <h2 class="section-title text-center reveal">My <span class="red">Services</span></h2>
+      <p class="section-desc text-center reveal">Turning ideas into powerful digital experiences — from pixel-perfect
+        UIs to intelligent automated systems.</p>
+      <div class="services-grid">
+
+        <div class="service-card reveal" id="card-web">
+          <div class="service-icon-3d">
+            <div class="icon-cube">
+              <i class="fas fa-globe"></i>
+            </div>
+          </div>
+          <div class="service-number">01</div>
+          <h3>Web Development &amp; Design</h3>
+          <p>Modern, fast, and responsive websites built to deliver a flawless user experience across all devices. From
+            landing pages to full-stack applications.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Pixel-perfect responsive layouts</li>
+            <li><i class="fas fa-check-circle"></i> Performance-optimized code</li>
+            <li><i class="fas fa-check-circle"></i> Modern UI/UX principles</li>
+            <li><i class="fas fa-check-circle"></i> SEO-friendly structure</li>
+          </ul>
+          <div class="service-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Figma</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal featured-card" id="card-ai">
+          <div class="featured-label">Most Popular</div>
+          <div class="service-icon-3d">
+            <div class="icon-cube red-cube">
+              <i class="fas fa-robot"></i>
+            </div>
+          </div>
+          <div class="service-number">02</div>
+          <h3>AI &amp; Bot Development</h3>
+          <p>Intelligent bots for Discord and Telegram. AI-powered automation solutions designed to enhance community
+            engagement and streamline your workflow.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Custom Discord/Telegram bots</li>
+            <li><i class="fas fa-check-circle"></i> AI chatbot integration</li>
+            <li><i class="fas fa-check-circle"></i> Automation workflows</li>
+            <li><i class="fas fa-check-circle"></i> Security & moderation systems</li>
+          </ul>
+          <div class="service-tags">
+            <span>Python</span><span>Discord.py</span><span>AI/ML</span><span>Automation</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal" id="card-tech">
+          <div class="service-icon-3d">
+            <div class="icon-cube">
+              <i class="fas fa-cogs"></i>
+            </div>
+          </div>
+          <div class="service-number">03</div>
+          <h3>Versatile Tech Solutions</h3>
+          <p>Beyond development — creative technical solutions tailored to your needs. From comprehensive Discord server
+            security to foundational graphic design and media.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Discord server security</li>
+            <li><i class="fas fa-check-circle"></i> Graphic design & branding</li>
+            <li><i class="fas fa-check-circle"></i> Video editing & media</li>
+            <li><i class="fas fa-check-circle"></i> Prompt engineering</li>
+          </ul>
+          <div class="service-tags">
+            <span>Photoshop</span><span>Canva</span><span>Filmora</span><span>Security</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO SECTION ========== -->
+  <section id="portfolio">
+    <div class="section-container">
+      <div class="section-label reveal">My Work</div>
+      <h2 class="section-title text-center reveal">Featured <span class="red">Projects</span></h2>
+      <p class="section-desc text-center reveal">A selection of projects I've built — from AI systems to full-scale web
+        applications.</p>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active-filter" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI & Bots</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="discord">Discord</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card reveal" data-category="discord">
+          <div class="portfolio-img-wrap">
+            <img src="imgs/Edith bot.png" alt="Edith Bot" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icons">
+                <a href="https://bot.xyz/" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i
+                    class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-category">Discord Automation · Security</div>
+            <h3>Edith Bot</h3>
+            <p>A powerful Discord Anti-Nuke and Multitasking bot designed to protect and manage servers with advanced
+              security features and utility commands.</p>
+            <div class="portfolio-tech">
+              <span>Python</span><span>Discord.py</span><span>Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="web">
+          <div class="portfolio-img-wrap">
+            <img src="imgs/offchest logo.png" alt="OffChest" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icons">
+                <a href="https://offchest.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i
+                    class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-category">Web Application · E-commerce</div>
+            <h3>OffChest</h3>
+            <p>A premium confectionery website offering a delightful shopping experience for sweet lovers, featuring a
+              modern UI and seamless navigation.</p>
+            <div class="portfolio-tech">
+              <span>JavaScript</span><span>Vite</span><span>Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="ai">
+          <div class="portfolio-img-wrap">
+            <img src="imgs/aiimg.png" alt="Genesis AI Chatbot" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icons">
+                <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-category">Featured Project · AI</div>
+            <h3>Genesis AI Chatbot</h3>
+            <p>A standalone, human-like conversational AI developed from the ground up without relying on external APIs.
+              Features a unique self-questioning and contextual engine.</p>
+            <div class="portfolio-tech">
+              <span>Python</span><span>NLP</span><span>AI/ML</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Remy AI -->
+        <div class="portfolio-card reveal" data-category="ai">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Remy AI" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icons">
+                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-category">AI · Roleplay · NLP</div>
+            <h3>Remy AI</h3>
+            <p>A roleplay character AI chatbot that talks like your favourite novel character. Just give it a book name — it auto-fetches character data from the internet and starts chatting in their voice.</p>
+            <div class="portfolio-tech">
+              <span>Python</span><span>NLP</span><span>Web Scraping</span><span>AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Teacher -->
+        <div class="portfolio-card reveal" data-category="ai">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Teacher" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icons">
+                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-category">Running Project · EdTech · AI</div>
+            <h3>AI Teacher <span style="font-size:10px; background:var(--red); color:#fff; padding:2px 8px; border-radius:50px; vertical-align:middle; margin-left:6px;">LIVE</span></h3>
+            <p>Students learn on their own timeline with a fully customizable AI teacher. Design your own curriculum, set your pace, and get a personalised learning experience powered by AI.</p>
+            <div class="portfolio-tech">
+              <span>Python</span><span>AI/ML</span><span>EdTech</span><span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real Estate & MLM -->
+        <div class="portfolio-card reveal" data-category="web">
+          <div class="portfolio-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Real Estate & MLM" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icons">
+                <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-category">Web App · Real Estate · MLM</div>
+            <h3>Real Estate &amp; MLM Platform</h3>
+            <p>A full-stack premium real estate platform with integrated MLM referral system, property listings, user dashboards, and automated commission tracking.</p>
+            <div class="portfolio-tech">
+              <span>Next.js</span><span>Supabase</span><span>FastAPI</span><span>MLM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title text-center reveal">Contact <span class="red">Me</span></h2>
+      <p class="section-desc text-center reveal">Have a project in mind? Let's build something great together.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p>Whether you have a project idea, want to collaborate, or just want to say hello — my inbox is always open.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="ci-label">Email</span>
+                <a href="mailto:warghkali@gmail.com">warghkali@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <span class="ci-label">Website</span>
+                <a href="https://wargh.dev" target="_blank" rel="noopener noreferrer">wargh.dev</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-discord"></i></div>
+              <div>
+                <span class="ci-label">Discord</span>
+                <a href="https://discord.com/users/wargh.dev" target="_blank" rel="noopener noreferrer">wargh.dev</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://instagram.com/wargh.in" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://discord.com/users/wargh.dev" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://github.com/adarshmishra-ai" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-btn" id="submitBtn">
+            <span id="btnText">Send Message <i class="fas fa-paper-plane"></i></span>
+          </button>
+          <div id="formSuccess" class="form-success" style="display:none">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <img src="/imgs/warghlogo.png" alt="Wargh Logo" class="footer-logo">
+      <p>© 2026 Wargh. Crafted with <span class="red">♥</span> and a lot of coffee.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

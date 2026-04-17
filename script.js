@@ -454,8 +454,8 @@ function closeMobileMenu() {
 // ============================================================
 // 10. TAB SYSTEM (About Section)
 // ============================================================
-var tablinks = document.getElementsByClassName('tab-links');
-var tabcontents = document.getElementsByClassName('tab-contents');
+const tablinks = document.getElementsByClassName('tab-links');
+const tabcontents = document.getElementsByClassName('tab-contents');
 
 function opentab(tabname, el) {
   for (let tablink of tablinks) {
@@ -508,33 +508,64 @@ function opentab(tabname, el) {
 })();
 
 
-// ============================================================
 // 12. CONTACT FORM HANDLER
 // ============================================================
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
   const btnText = document.getElementById('btnText');
   const successMsg = document.getElementById('formSuccess');
 
   // Show loading state
+  const originalBtnContent = btnText.innerHTML;
   btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   btn.disabled = true;
   btn.style.opacity = '0.7';
 
-  // Simulate send (replace with actual EmailJS or FormSubmit)
-  setTimeout(() => {
-    btnText.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+  // YOU NEED TO REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+  const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+  try {
+    const formData = new FormData(e.target);
+    
+    // Check if URL is placeholder
+    if (SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+      console.warn('Google Sheets SCRIPT_URL is not set. Simulating success...');
+      await new Promise(resolve => setTimeout(resolve, 1500));
+    } else {
+      const response = await fetch(SCRIPT_URL, {
+        method: 'POST',
+        body: formData
+      });
+      
+      if (!response.ok) throw new Error('Network response was not ok');
+    }
+
+    // Success state
+    btnText.innerHTML = originalBtnContent;
     btn.disabled = false;
     btn.style.opacity = '1';
     successMsg.style.display = 'flex';
-    document.getElementById('contactForm').reset();
+    successMsg.style.color = '#2dd4b3'; // Ensure color is consistent
+    e.target.reset();
 
     setTimeout(() => {
       successMsg.style.display = 'none';
     }, 5000);
-  }, 2000);
+
+  } catch (error) {
+    console.error('Error!', error.message);
+    btnText.innerHTML = 'Error! Try Again';
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    
+    // Show error message (temporary)
+    setTimeout(() => {
+      btnText.innerHTML = originalBtnContent;
+    }, 3000);
+  }
 }
+
 
 
 // ============================================================

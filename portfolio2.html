@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Adarsh aka Wargh — Premium Developer & AI Innovator Portfolio.">
+  <title>Wargh | Portfolio V2 — Developer & AI Innovator</title>
+  <link rel="stylesheet" href="port2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♔</text></svg>">
+</head>
+<body>
+
+  <!-- Hub back link -->
+  <a href="index.html" class="gateway-back"><i class="fas fa-arrow-left"></i> Hub</a>
+
+  <!-- Mobile Drawer -->
+  <div class="p2-mobile-menu" id="p2MobileMenu">
+    <button class="p2-close-btn" id="p2CloseBtn">&times;</button>
+    <a href="#about"    onclick="closeP2()">About</a>
+    <a href="#services" onclick="closeP2()">Services</a>
+    <a href="#portfolio" onclick="closeP2()">Projects</a>
+    <a href="#contact"  onclick="closeP2()">Contact</a>
+    <a href="#contact"  onclick="closeP2()" style="font-size:1rem; color: var(--gold); border: 1px solid rgba(212,168,67,0.4); padding: 0.75rem 2rem; border-radius: 50px; margin-top:0.5rem; font-family:'Syne',sans-serif; font-weight:700; letter-spacing:1px;">Hire Me</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="nav-brand">Wargh<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-hire">Hire Me <i class="fas fa-arrow-up-right-from-square" style="font-size:0.7rem;"></i></a>
+    <button class="p2-nav-hamburger" id="p2Ham" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="hero-inner reveal">
+      <span class="hero-tag">Available for Projects</span>
+
+      <h1 class="hero-title">
+        Developer &amp;<br>
+        <em>AI Innovator</em>
+      </h1>
+
+      <p class="hero-desc">
+        Building intelligent systems, stunning interfaces, and automated workflows — from the ground up. Based in India, working globally.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn-gold">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num">15+</span>
+          <span class="hero-stat-label">Projects</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">2+</span>
+          <span class="hero-stat-label">Years Exp.</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">10+</span>
+          <span class="hero-stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating skill card (desktop only) -->
+    <div class="hero-float-card">
+      <div class="float-card-title">Core Skills</div>
+      <div class="float-card-skill">
+        <span>Python</span>
+        <div class="float-card-bar"><div class="float-card-fill" style="width:85%"></div></div>
+      </div>
+      <div class="float-card-skill">
+        <span>JavaScript</span>
+        <div class="float-card-bar"><div class="float-card-fill" style="width:80%"></div></div>
+      </div>
+      <div class="float-card-skill">
+        <span>AI / Bot Eng.</span>
+        <div class="float-card-bar"><div class="float-card-fill" style="width:75%"></div></div>
+      </div>
+      <div class="float-card-skill">
+        <span>UI / UX Design</span>
+        <div class="float-card-bar"><div class="float-card-fill" style="width:70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about" class="section section-bg">
+    <div class="about-wrap">
+      <div class="about-photo-wrap reveal">
+        <img src="imgs/003.jpeg" alt="Adarsh Mishra — Wargh">
+      </div>
+      <div class="about-text">
+        <span class="section-eye">Who I Am</span>
+        <h2 class="section-heading">Adarsh <span>Mishra</span></h2>
+
+        <p>I'm a versatile developer and AI builder passionate about solving complex problems through technology. My journey began on a low-end PC with the ambitious goal of building a world-class cybersecurity company — a path that has made me resourceful and persistent.</p>
+        <p>A natural leader and extrovert, I thrive in collaborative environments and love tackling challenges across AI, UI design, and automation. I'm a dedicated lifelong learner driven to turn bold ideas into reality.</p>
+
+        <div class="skill-list reveal">
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-name">Python &amp; Automation</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-name">JavaScript &amp; Web Dev</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-name">AI &amp; Bot Engineering</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top">
+              <span class="skill-name">UI/UX &amp; Figma</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SERVICES ══ -->
+  <section id="services" class="section">
+    <span class="section-eye reveal">What I Do</span>
+    <h2 class="section-heading reveal">My <span>Services</span></h2>
+
+    <div class="services-grid" style="margin-top: 3rem;">
+      <div class="s-card reveal">
+        <span class="s-card-num">01</span>
+        <div class="s-icon"><i class="fas fa-globe"></i></div>
+        <h3>Web Design &amp; Development</h3>
+        <p>Modern, fast, responsive websites built to deliver a flawless user experience across all devices — from landing pages to full-stack applications.</p>
+        <div class="s-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Figma</span>
+        </div>
+      </div>
+
+      <div class="s-card reveal">
+        <span class="s-card-num">02</span>
+        <div class="s-icon"><i class="fas fa-robot"></i></div>
+        <h3>AI &amp; Bot Development</h3>
+        <p>Intelligent bots for Discord and Telegram. AI-powered automation solutions designed to enhance community engagement and streamline your workflow.</p>
+        <div class="s-tags">
+          <span>Python</span><span>Discord.py</span><span>AI/ML</span><span>Automation</span>
+        </div>
+      </div>
+
+      <div class="s-card reveal">
+        <span class="s-card-num">03</span>
+        <div class="s-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Tech &amp; Security Solutions</h3>
+        <p>Beyond code — Discord server security, graphic design, video editing, and advanced prompt engineering for premium digital operations.</p>
+        <div class="s-tags">
+          <span>Security</span><span>Photoshop</span><span>Canva</span><span>Filmora</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS — 3D SHOWCASE ══ -->
+  <section id="portfolio" class="section section-bg">
+
+    <div class="projects-header">
+      <div>
+        <span class="section-eye">My Work</span>
+        <h2 class="section-heading">Featured <span>Projects</span></h2>
+      </div>
+      <p>A selection of things I've shipped — from AI systems to full-scale web applications.</p>
+    </div>
+
+    <div class="project-showcase">
+
+      <!-- 01 Edith Bot -->
+      <div class="project-slide reveal">
+        <div class="project-screen">
+          <div class="browser-chrome">
+            <div class="chrome-dots"><span></span><span></span><span></span></div>
+            <div class="chrome-bar"></div>
+          </div>
+          <img src="imgs/Edith bot.png" alt="Edith Bot">
+        </div>
+        <div class="project-info">
+          <span class="project-number">01</span>
+          <div class="project-cat">Discord Automation · Security</div>
+          <h3 class="project-name">Edith Bot</h3>
+          <p class="project-desc">A powerful Discord Anti-Nuke and Multitasking bot designed to protect and manage servers with advanced security features and utility commands.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Discord.py</span><span>Security</span>
+          </div>
+          <a href="https://github.com/adarshmishra-ai" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-divider"></div>
+
+      <!-- 02 OffChest -->
+      <div class="project-slide reverse reveal">
+        <div class="project-screen">
+          <div class="browser-chrome">
+            <div class="chrome-dots"><span></span><span></span><span></span></div>
+            <div class="chrome-bar"></div>
+          </div>
+          <img src="imgs/offchest logo.png" alt="OffChest">
+        </div>
+        <div class="project-info">
+          <span class="project-number">02</span>
+          <div class="project-cat">Web Application · E-commerce</div>
+          <h3 class="project-name">OffChest</h3>
+          <p class="project-desc">A premium confectionery website offering a delightful shopping experience for sweet lovers, featuring a modern UI and seamless navigation.</p>
+          <div class="project-stack">
+            <span>JavaScript</span><span>Vite</span><span>Tailwind</span>
+          </div>
+          <a href="https://offchest.vercel.app/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-divider"></div>
+
+      <!-- 03 Genesis AI -->
+      <div class="project-slide reveal">
+        <div class="project-screen">
+          <div class="browser-chrome">
+            <div class="chrome-dots"><span></span><span></span><span></span></div>
+            <div class="chrome-bar"></div>
+          </div>
+          <img src="imgs/aiimg.png" alt="Genesis AI Chatbot">
+        </div>
+        <div class="project-info">
+          <span class="project-number">03</span>
+          <div class="project-cat">Featured Project · AI</div>
+          <h3 class="project-name">Genesis AI Chatbot</h3>
+          <p class="project-desc">A standalone, human-like conversational AI developed from the ground up without external APIs. Features a unique self-questioning and contextual engine.</p>
+          <div class="project-stack">
+            <span>Python</span><span>NLP</span><span>AI/ML</span>
+          </div>
+          <a href="https://github.com/adarshmishra-ai" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+
+      <!-- 04 Remy AI -->
+      <div class="project-slide reverse reveal">
+        <div class="project-screen">
+          <div class="browser-chrome">
+            <div class="chrome-dots"><span></span><span></span><span></span></div>
+            <div class="chrome-bar"></div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Remy AI">
+        </div>
+        <div class="project-info">
+          <span class="project-number">04</span>
+          <div class="project-cat">AI · Roleplay · Character Chat</div>
+          <h3 class="project-name">Remy AI</h3>
+          <p class="project-desc">A novel character roleplay chatbot — just type a book name and Remy auto-fetches the character's personality from the internet and starts chatting in their exact voice and style.</p>
+          <div class="project-stack">
+            <span>Python</span><span>NLP</span><span>Web Scraping</span><span>AI</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-divider"></div>
+
+      <!-- 05 AI Teacher -->
+      <div class="project-slide reveal">
+        <div class="project-screen">
+          <div class="browser-chrome">
+            <div class="chrome-dots"><span></span><span></span><span></span></div>
+            <div class="chrome-bar"></div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="AI Teacher">
+        </div>
+        <div class="project-info">
+          <span class="project-number">05</span>
+          <div class="project-cat" style="display:flex; align-items:center; gap:8px;">Running Project · EdTech <span style="font-size:10px; background:#2dd4b3; color:#000; padding:2px 8px; border-radius:50px; font-weight:700;">LIVE</span></div>
+          <h3 class="project-name">AI Teacher</h3>
+          <p class="project-desc">Students learn on their own timeline. Build a fully personalised AI teacher — choose your subject, set your pace, and get a custom curriculum that adapts to your progress in real time.</p>
+          <div class="project-stack">
+            <span>Python</span><span>AI/ML</span><span>EdTech</span><span>React</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-divider"></div>
+
+      <!-- 06 Real Estate & MLM -->
+      <div class="project-slide reverse reveal">
+        <div class="project-screen">
+          <div class="browser-chrome">
+            <div class="chrome-dots"><span></span><span></span><span></span></div>
+            <div class="chrome-bar"></div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Real Estate & MLM">
+        </div>
+        <div class="project-info">
+          <span class="project-number">06</span>
+          <div class="project-cat">Web Platform · Real Estate · MLM</div>
+          <h3 class="project-name">Real Estate &amp; MLM Platform</h3>
+          <p class="project-desc">A full-stack premium real estate platform with an integrated MLM referral system, property listings, user dashboards, and automated commission tracking for agents and clients.</p>
+          <div class="project-stack">
+            <span>Next.js</span><span>Supabase</span><span>FastAPI</span><span>MLM</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact" class="section">
+    <div class="contact-wrap">
+      <div class="contact-left reveal">
+        <span class="section-eye">Get In Touch</span>
+        <h2>Let's Build<br><em>Together</em></h2>
+        <p>Have a project idea, want to collaborate, or just want to say hello? My inbox is always open. Let's create something extraordinary.</p>
+
+        <div class="contact-links">
+          <a href="mailto:warghkali@gmail.com" class="contact-link-row">
+            <div class="clink-icon"><i class="fas fa-envelope"></i></div>
+            <div class="clink-txt">
+              <span class="clink-label">Email</span>
+              <span class="clink-val">warghkali@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://discord.com/users/wargh.dev" target="_blank" class="contact-link-row">
+            <div class="clink-icon"><i class="fab fa-discord"></i></div>
+            <div class="clink-txt">
+              <span class="clink-label">Discord</span>
+              <span class="clink-val">wargh.dev</span>
+            </div>
+          </a>
+          <a href="https://github.com/adarshmishra-ai" target="_blank" class="contact-link-row">
+            <div class="clink-icon"><i class="fab fa-github"></i></div>
+            <div class="clink-txt">
+              <span class="clink-label">GitHub</span>
+              <span class="clink-val">adarshmishra-ai</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/wargh.in" target="_blank" class="contact-link-row">
+            <div class="clink-icon"><i class="fab fa-instagram"></i></div>
+            <div class="clink-txt">
+              <span class="clink-label">Instagram</span>
+              <span class="clink-val">@wargh.in</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <form onsubmit="handleSend(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Project Inquiry">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-gold" style="width:100%; justify-content:center; border:none; cursor:pointer; font-size:0.9rem;">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <div id="p2FormMsg" style="display:none; margin-top:1rem; text-align:center; color:#2dd4b3; font-size:0.9rem;">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-brand">Wargh<span>.</span></div>
+    <p>© 2026 Adarsh Mishra. Built with craft &amp; care.</p>
+    <div class="footer-socials">
+      <a href="https://instagram.com/wargh.in" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/adarshmishra-ai" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://discord.com/users/wargh.dev" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      <a href="https://wargh.dev" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // ── Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const ro = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          // Animate skill bars
+          e.target.querySelectorAll('.skill-fill[data-w]').forEach(bar => {
+            bar.style.width = bar.dataset.w + '%';
+          });
+          ro.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => ro.observe(el));
+
+    // ── Mobile menu
+    const ham = document.getElementById('p2Ham');
+    const menu = document.getElementById('p2MobileMenu');
+    const closeBtn = document.getElementById('p2CloseBtn');
+    ham.addEventListener('click', () => {
+      menu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+    function closeP2() {
+      menu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    closeBtn.addEventListener('click', closeP2);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeP2(); });
+
+    // ── Active nav highlight on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let pos = window.scrollY + 100;
+      sections.forEach(s => {
+        if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.nav-links a[href="#${s.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { passive: true });
+
+    // ── 3D mouse tilt for project screens (desktop)
+    document.querySelectorAll('.project-screen').forEach(screen => {
+      const isReverse = screen.closest('.project-slide.reverse');
+      screen.addEventListener('mousemove', e => {
+        const r = screen.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        const ry = isReverse ? (x * 12) : (x * 12);
+        const rx = -(y * 6);
+        screen.style.transform = `perspective(1200px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-8px)`;
+      });
+      screen.addEventListener('mouseleave', () => {
+        const base = isReverse
+          ? 'perspective(1200px) rotateY(10deg) rotateX(4deg)'
+          : 'perspective(1200px) rotateY(-10deg) rotateX(4deg)';
+        screen.style.transform = base;
+        screen.style.transition = 'transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)';
+      });
+      screen.addEventListener('mouseenter', () => {
+        screen.style.transition = 'transform 0.2s ease';
+      });
+    });
+
+    // ── Contact form
+    async function handleSend(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button');
+      const msg = document.getElementById('p2FormMsg');
+      const originalBtnHtml = btn.innerHTML;
+
+      // Show loading
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      btn.style.pointerEvents = 'none';
+      btn.style.opacity = '0.7';
+
+      // YOU NEED TO REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+      const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+      try {
+        const formData = new FormData(form);
+        
+        if (SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+          console.warn('Google Sheets SCRIPT_URL is not set. Simulating success...');
+          await new Promise(resolve => setTimeout(resolve, 1500));
+        } else {
+          const response = await fetch(SCRIPT_URL, { method: 'POST', body: formData });
+          if (!response.ok) throw new Error('Network response was not ok');
+        }
+
+        msg.style.display = 'block';
+        msg.style.color = '#2dd4b3';
+        msg.innerHTML = '<i class="fas fa-check-circle"></i> Message sent! I\'ll get back to you soon.';
+        form.reset();
+        setTimeout(() => { msg.style.display = 'none'; }, 5000);
+      } catch (err) {
+        console.error('Error!', err.message);
+        msg.style.display = 'block';
+        msg.style.color = '#ff4d4d';
+        msg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error sending message. Please try again.';
+      } finally {
+        btn.innerHTML = originalBtnHtml;
+        btn.style.pointerEvents = 'all';
+        btn.style.opacity = '1';
+      }
+    }
+  </script>
+
+</body>
+</html>

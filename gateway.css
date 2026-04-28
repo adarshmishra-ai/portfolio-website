@@ -78,11 +78,11 @@ body {
 }
 
 .portal-1::before {
-  background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+  background-image: url('imgs/clasic\ dc.jfif');
 }
 
 .portal-2::before {
-  background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+  background-image: url('imgs/enter\ pc.jfif');
 }
 
 .portal-card:hover {
